@@ -15,12 +15,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e8ea56d0ff.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-
 <body>
     <!-- Hero Section -->
     <section class="hero">
@@ -29,9 +30,7 @@
                 <label>Sample@gmail.com/ +043 89 76 4576</label>
                 <label>OPEN FROM 9AM TO 5PM - CLOSED ON WEEKENDS</label>
             </div>
-            <div class="contact-line">
-                <img src="./Line 1.png">
-            </div>
+            <hr />
         </nav>
         <!-- Navbar -->
         <nav class="navbar">
@@ -70,36 +69,44 @@
         </div>
     </section>
     <!-- material -->
-    <section class="cards-materials">
-        <div class="card first">
-            <div class="card-content">
-                <p>SPECIAL OFFER</p>
-                <div class="card-content-inner">
-                    <h3>Recycled metal</h3>
-                    <img src="/Line 2.png" alt="Line-2">
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper cards-materials">
+            <!-- Slides -->
+            <div class="swiper-slide card first">
+                <div class="card-content">
+                    <p>SPECIAL OFFER</p>
+                    <div class="card-content-inner">
+                        <h3>Recycled metal</h3>
+                        <img src="/Line 2.png" alt="Line-2">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card second">
-            <div class="card-content">
-                <p>TOP PICKS</p>
-                <div class="card-content-inner">
-                    <h3>Custom woodwork</h3>
-                    <img src="/Line 2.png" alt="Line-2">
+            <div class="swiper-slide card second">
+                <div class="card-content">
+                    <p>TOP PICKS</p>
+                    <div class="card-content-inner">
+                        <h3>Custom woodwork</h3>
+                        <img src="/Line 2.png" alt="Line-2">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card third">
-            <div class="card-content">
-                <p>MINIMAL DECOR</p>
-                <div class="card-content-inner">
-                    <h3>Handmade pottery</h3>
-                    <img src="/Line 2.png" alt="Line-2">
-                </div>
-            </div>
-        </div>
 
-    </section>
+            <div class="swiper-slide card third">
+                <div class="card-content">
+                    <p>MINIMAL DECOR</p>
+                    <div class="card-content-inner">
+                        <h3>Handmade pottery</h3>
+                        <img src="/Line 2.png" alt="Line-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
     <!--Items cards  -->
     <section class="items-section">
         <div class="items-heading">
@@ -232,7 +239,7 @@
                 </div>
             </div>
 
-            <div class="review">
+            <div class="review one-review">
                 <div class="review-heading">
                     <img src="./Ellipse 7.svg" alt="">
                     <div>
@@ -251,7 +258,8 @@
                     <i class="fa-regular fa-star" style="color: #f9c355;"></i>
                 </div>
             </div>
-            <div class="review">
+            
+            <div class="review two-review">
                 <div class="review-heading">
                     <img src="./Ellipse 7.svg" alt="">
                     <div>
@@ -274,11 +282,12 @@
     </section>
     <!-- team  -->
     <section class="team-section">
-        <div class="team-color">
+        <section class="team-color">
             <div class="team-main-heading">
                 <h5>OUR CREATIVE FORCE</h5>
                 <h1>Meet our team</h1>
-            </div>
+            </div></section>
+            
             <div class="team-container">
                 <div class="team">
                     <img src="./image 9.png" alt="">
@@ -309,13 +318,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
     </section>
     <!-- blog -->
     <section class="blog-section">
         <div class="blog-main-heading">
-            <h5>TESTIMONIALS</h5>
-            <h1>What our clients says</h1>
+            <h5>OUR RECENT WORK</h5>
+            <h1>Our Latest Blogs</h1>
         </div>
         <div class="blog-container">
             <div class="blog">
@@ -404,8 +413,19 @@
     </section>
     <!-- email -->
     <section class="email">
-      <a href="">www.karobarhq.com</a>
+      <div class="full-screen-view-text">
+          <a href="">www.karobarhq.com</a>
+      </div>
+        <hr/>
+        <div class="mobile-screen-view-text">
+            <a href="">All rights are reserved@digital 2022</a>
+        </div>
+        
     </section>
+
+
+
+
     <script src="index.js"></script>
 </body>
 
